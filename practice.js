@@ -272,7 +272,7 @@ function addEmployee() {
     }
   }
 }
-//console.log(devMountainEmployees.length)
+console.log(devMountainEmployees.length)
 
 /*Now let's say Cahlan has a mental breakdown and has to take a leave of absense to 'find himself'.
 Loop through your devMountainEmployees until you find cahlan, then remove him from the array.*/
