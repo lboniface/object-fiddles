@@ -266,7 +266,7 @@ array with those four objects. After that console.log the length of the Array an
 sure that it's equal to 4. */
 
 function addEmployee() {
-  for (var i=0; i < arguments.length-1; ++i) {
+  for (var i=0; i < arguments.length; ++i) {
     if (arguments[i] !== devMountainEmployees[i]) {
       devMountainEmployees.push(arguments[i]);
     }
@@ -351,8 +351,8 @@ var user2 = new User('Larry Boniface', 'larrydigscoupons@gmail.com', 'supersecre
 var user3 = new User('Generic Name', 'genericEmail@rocketmail.com', 'password', 'genericUser')
 var user4 = new User('Rae Sremmurd', 'noflex@zone.com', 'iaintgotnotype', 'eardrummers')
 
-function addUsers(userArray) {
-  for (var i=1; i < arguments.length-1; ++i) {
+function addUsers(userArray, usersToAdd) {
+  for (var i=1; i < arguments.length; ++i) {
     if (arguments[i] !== userArray[i]) {
       userArray.push(arguments[i]);
     }
@@ -367,13 +367,15 @@ and those objects contain properties about the specific person you follow.*/
 objects until you find Tyler's account (use tylermcginnis33@gmail.com to find him).
 Once you find the particular indice he's located in, delete him from the array.*/
 
-function removeUserByEmail(userArray, userEmail) {
+function removeUserByEmail(userArray, email) {
   for (i=0; i<userArray.length-1; i++) {
-    if (userArray[i].email === userEmail || userArray[i] === userEmail) {
+    if (userArray[i].email === email) {
         userArray.splice(i,1);
+
     }
   }
 }
+
 
 //The activity we just did is very much how data works in 'the real world'.
 
